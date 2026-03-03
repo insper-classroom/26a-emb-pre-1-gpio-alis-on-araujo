@@ -1,18 +1,21 @@
-#include "stdio.h"
+#include <stdio.h>
+#include <stdbool.h>
 
-int a = 0; // var global
-int b = 0; // var global
-
-void foo(void) {
-    a = a + 1; // acessa variavel global
+static int foo(int value) {
+    return value + 1;
 }
 
-void main(void) {
+int main(void) {
+    int a = 0;
+    bool b = false;
+
     while (1) {
-        foo();
-        
+        a = foo(a);
+
         if (a > 5) {
-            b = 1;
+            b = true;
         }
     }
+
+    return 0;
 }
