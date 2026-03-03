@@ -17,15 +17,15 @@ int main() {
   gpio_pull_up(BTN_PIN_G);
 
   while (true) {
-    if (!gpio_get(BTN_PIN_B)) {
+    if (!gpio_get(BTN_PIN_G)) {
       printf("Botao 1\n");
-      while (!gpio_get(BTN_PIN_B)) {
+      while (!gpio_get(BTN_PIN_G)) {
       }
     }
 
-    if (!gpio_get(BTN_PIN_G)) {
+    if (!gpio_get(BTN_PIN_B)) {
       printf("Botao 2\n");
-      while (!gpio_get(BTN_PIN_G)) {
+      while (!gpio_get(BTN_PIN_B)) {
       }
     }
   }
