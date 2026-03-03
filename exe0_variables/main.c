@@ -7,13 +7,13 @@ static int foo(int value) {
 
 int main(void) {
     int a = 0;
-    bool b = false;
 
     while (1) {
         a = foo(a);
 
         if (a > 5) {
-            b = true;
+            bool b = true;
+            if (b) break;
         }
     }
 
