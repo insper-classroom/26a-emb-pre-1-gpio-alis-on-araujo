@@ -49,8 +49,8 @@ int main(void) {
                 stable_state_1 = reading1;
                 // stable_state == 0 means pressed (pull-up)
                 if (stable_state_1 == 0) {
-                    count1++;
                     printf("Botao 1: %d\n", count1);
+                    count1++;
                 }
             }
         }
@@ -64,8 +64,8 @@ int main(void) {
             if (stable_state_2 != reading2) {
                 stable_state_2 = reading2;
                 if (stable_state_2 == 0) {
-                    count2++;
                     printf("Botao 2: %d\n", count2);
+                    count2++;
                 }
             }
         }
